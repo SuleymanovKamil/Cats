@@ -10,7 +10,7 @@ import Combine
 
 class Networking: ObservableObject {
     
-    @Published var randomCat = [Random]()
+ 
     @Published var data: Data?
     
     private var cancellable = Set<AnyCancellable>()
@@ -32,7 +32,6 @@ class Networking: ObservableObject {
                        if let loadData =  try? Data(contentsOf: URL(string: value.first!.url)!) {
                            data = loadData
                        }
-                   randomCat = value
                }
                .store(in: &cancellable)
     }

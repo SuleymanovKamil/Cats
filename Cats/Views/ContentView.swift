@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
        
         Group{
-            if !viewModel.randomCat.isEmpty {
+            if viewModel.data != nil {
                 VStack {
                     Spacer()
                     Image(uiImage: UIImage(data: viewModel.data!)!)
@@ -28,7 +28,7 @@ struct ContentView: View {
                         .blur(radius: 10)
                 )
                 .onTapGesture {
-                    viewModel.randomCat.removeAll()
+                    viewModel.data = nil
                     viewModel.loadRandomCat()
             }
                 
