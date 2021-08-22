@@ -13,6 +13,8 @@
 		6B512EFF26D2DDCD006FC01B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B512EFE26D2DDCD006FC01B /* Preview Assets.xcassets */; };
 		6B512F0A26D2DDCD006FC01B /* CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B512F0926D2DDCD006FC01B /* CatsTests.swift */; };
 		6B512F1526D2DDCD006FC01B /* CatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B512F1426D2DDCD006FC01B /* CatsUITests.swift */; };
+		6B512F2626D2DE09006FC01B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B512F2526D2DE09006FC01B /* Networking.swift */; };
+		6B512F2826D2DEC2006FC01B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B512F2726D2DEC2006FC01B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		6B512F1026D2DDCD006FC01B /* CatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B512F1426D2DDCD006FC01B /* CatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITests.swift; sourceTree = "<group>"; };
 		6B512F1626D2DDCD006FC01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B512F2526D2DE09006FC01B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		6B512F2726D2DEC2006FC01B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 		6B512EF626D2DDCB006FC01B /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				6B512F2426D2DDF2006FC01B /* ViewModel */,
+				6B512F2326D2DDE2006FC01B /* Views */,
+				6B512F2226D2DDDB006FC01B /* Model */,
 				6B512EF726D2DDCB006FC01B /* CatsApp.swift */,
-				6B512EF926D2DDCB006FC01B /* ContentView.swift */,
 				6B512EFB26D2DDCD006FC01B /* Assets.xcassets */,
 				6B512F0026D2DDCD006FC01B /* Info.plist */,
 				6B512EFD26D2DDCD006FC01B /* Preview Content */,
@@ -128,6 +134,30 @@
 				6B512F1626D2DDCD006FC01B /* Info.plist */,
 			);
 			path = CatsUITests;
+			sourceTree = "<group>";
+		};
+		6B512F2226D2DDDB006FC01B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B512F2726D2DEC2006FC01B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B512F2326D2DDE2006FC01B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B512EF926D2DDCB006FC01B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B512F2426D2DDF2006FC01B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B512F2526D2DE09006FC01B /* Networking.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B512F2626D2DE09006FC01B /* Networking.swift in Sources */,
 				6B512EFA26D2DDCB006FC01B /* ContentView.swift in Sources */,
 				6B512EF826D2DDCB006FC01B /* CatsApp.swift in Sources */,
+				6B512F2826D2DEC2006FC01B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
