@@ -10,9 +10,7 @@ import Combine
 
 class Networking: ObservableObject {
     
- 
     @Published var data: Data?
-    
     private var cancellable = Set<AnyCancellable>()
     
     init() {
